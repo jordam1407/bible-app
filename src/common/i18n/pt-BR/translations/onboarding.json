@@ -1,0 +1,25 @@
+{
+    "nameInput": "Digite seu nome e confirme para prosseguir:",
+    "welcome": {
+        "greeting": "Olá {{name}}, seja bem vindo ao melhor app de hábito de leitura bíblica."
+    },
+    "language": {
+        "title": "Selecione sua linguagem de preferência. Você pode alterar a qualquer momento no menu de configurações",
+        "options": {
+            "en": "Inglês",
+            "pt": "Portugês",
+            "esp": "Espanhol"
+        }
+    },
+    "bibleVersion": {
+        "title": "Selecione a versão da bíblia que você deseja utilizar.",
+        "options": {
+            "nvi": "NVI - Nova Versão Internacional",
+            "aa": "AA - Almeida Revista e Atualizada",
+            "acf": "ACF - Almeida Corrigida e Revisada Fiel"
+        }
+    },
+    "downloadBible": {
+        "title": "Aguarde firme, estamos fazendo download da sua bíblia."
+    }
+}

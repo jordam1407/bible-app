@@ -1,0 +1,14 @@
+/node_modules
+/build
+/coverage
+/dist
+/.vscode
+/.github
+/.next
+/.husky
+/public
+/src/assets/libs/*
+/postman
+/tests/cypres/*
+babel.config.js
+metro.config.js

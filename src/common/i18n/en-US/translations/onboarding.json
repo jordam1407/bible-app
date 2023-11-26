@@ -1,0 +1,17 @@
+{
+    "nameInput": "Enter your name and confirm to proceed:",
+    "welcome": {
+        "greeting": "Hello {{name}}, welcome to the best app for reading the Bible."
+    },
+    "language": {
+        "title": "Select your preferred language. You can change it anytime in the settings menu",
+        "options": {
+            "en": "English",
+            "pt": "Portuguese",
+            "esp": "Spanish"
+        }
+    },
+    "downloadBible": {
+        "title": "Hold on tight, we're downloading your Bible."
+    }
+}

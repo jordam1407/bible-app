@@ -1,0 +1,7 @@
+{
+    "error": "Error",
+    "invalidCredentials": "Dirección de correo electrónico o contraseña no válidos.",
+    "emptyEmailField": "Por favor, ingresa tu dirección de correo electrónico.",
+    "emptyPasswordField": "Por favor, ingresa tu contraseña.",
+    "invalidEmail": "Por favor, ingresa una dirección de correo electrónico válida."
+}

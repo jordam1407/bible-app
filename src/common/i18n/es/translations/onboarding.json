@@ -1,0 +1,17 @@
+{
+    "nameInput": "Ingresa tu nombre y confirma para continuar:",
+    "welcome": {
+        "greeting": "¡Hola {{name}}, bienvenido a la mejor aplicación para hábitos de lectura de la Biblia!"
+    },
+    "language": {
+        "title": "Selecciona tu idioma preferido. Puedes cambiarlo en cualquier momento desde el menú de configuración",
+        "options": {
+            "en": "Inglés",
+            "pt": "Portugués",
+            "esp": "Español"
+        }
+    },
+    "downloadBible": {
+        "title": "Espera un momento, estamos descargando tu Biblia."
+    }
+}

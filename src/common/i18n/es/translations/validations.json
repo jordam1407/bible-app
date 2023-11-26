@@ -1,0 +1,18 @@
+{
+    "error": "Erro",
+    "minLength": "{{field}} deve ter no mínimo {{min}} caracteres.",
+    "maxLength": "{{field}} deve ter no máximo {{max}} caracteres.",
+    "invalidCredentials": "Endereço de e-mail ou senha inválido(s).",
+    "invalidPassword": "Sua senha é inválida. Por favor, tente novamente.",
+    "invalidEmail": "Por favor, insira um endereço de e-mail válido.",
+    "emptyEmail": "Por favor, insira seu endereço de e-mail.",
+    "emptyPassword": "Por favor, insira sua senha.",
+    "confirmPassword": "A senha não coincide com a confirmação da senha.",
+    "passwordRequirements": {
+        "number": "Inclui número",
+        "lowercase": "Inclui letra minúscula",
+        "uppercase": "Inclui letra maiúscula",
+        "special": "Inclui símbolo especial",
+        "min": "Requer 8+ caracteres"
+    }
+}

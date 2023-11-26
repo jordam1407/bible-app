@@ -1,0 +1,15 @@
+{
+    "dateFormat": "{{date, DD/MM/YYYY}}",
+    "dateTimeFormat": "{{date, DD/MM/YYYY HH:MM:ss}}",
+    "moneyFormat": "{{money, 0.000,00}}",
+    "moneyCurrencyFormat": "{{money, R$0,0.00}}",
+    "close": "Fechar",
+    "delete": "Excluir",
+    "cancel": "Cancelar",
+    "search": "Buscar",
+    "upload": "Enviar",
+    "optional": "Opcional",
+    "admin": "Admin",
+    "save": "Salvar",
+    "archive": "Arquivar"
+}
