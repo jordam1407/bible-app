@@ -4,7 +4,7 @@
         "greeting": "¡Hola {{name}}, bienvenido a la mejor aplicación para hábitos de lectura de la Biblia!"
     },
     "language": {
-        "title": "Selecciona tu idioma preferido. Puedes cambiarlo en cualquier momento desde el menú de configuración",
+        "title": "Elige tu idioma favorito",
         "options": {
             "en": "Inglés",
             "pt": "Portugués",
@@ -12,6 +12,7 @@
         }
     },
     "downloadBible": {
+        "description": "No te preocupes, puedes cambiarlo en cualquier momento en el menú de configuración",
         "title": "Espera un momento, estamos descargando tu Biblia."
     }
 }

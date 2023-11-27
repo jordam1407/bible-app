@@ -1,3 +1,11 @@
 {
-    "title": "Verse Tracker"
+    "title": "Esse é um ótimo app para aprender sobre i18n!",
+    "body": {
+        "action": "Selecione a linguagem abaixo:",
+        "languages": {
+            "ptBR": "Portugês",
+            "enUS": "Inglês"
+        }
+    },
+    "bottomText": "A linguagem selecionada é: {{language}}"
 }

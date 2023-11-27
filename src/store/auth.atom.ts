@@ -5,7 +5,7 @@ import { atom } from 'jotai'
  */
 const user = atom<string>('')
 const language = atom<'portugues' | 'english' | 'spanish'>('portugues')
-const theme = atom<'dark' | 'light'>('dark')
+const theme = atom<'dark' | 'light'>('light')
 
 export const authStore = {
     user,

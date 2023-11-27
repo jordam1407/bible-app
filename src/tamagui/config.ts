@@ -26,7 +26,7 @@ const animations = createAnimations({
 })
 const headingFont = createInterFont()
 const bodyFont = createInterFont()
-const config = createTamagui({
+const appConfig = createTamagui({
     animations,
     defaultTheme: 'dark',
     shouldAddPrefersColorThemes: false,
@@ -39,9 +39,10 @@ const config = createTamagui({
     themes: themes,
     tokens: customToken,
 })
-export type AppConfig = typeof config
+export type AppConfig = typeof appConfig
+
 declare module 'tamagui' {
-    // eslint-disable-next-line @typescript-eslint/no-empty-interface
     interface TamaguiCustomConfig extends AppConfig {}
 }
-export default config
+
+export default appConfig

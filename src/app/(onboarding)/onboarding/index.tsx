@@ -1,14 +1,13 @@
-import useToggleTheme from '@src/hooks/useToggleTheme'
+import OnboardingHeader from '@src/components/container/onboarding/header/header'
+import LanguagePage from '@src/components/container/onboarding/language/Language'
 import React from 'react'
-import { useTranslation } from 'react-i18next'
-import { Text, YStack } from 'tamagui'
+import { YStack } from 'tamagui'
 
-export default function OnBarding() {
-    const { theme } = useToggleTheme()
-    const { t } = useTranslation('onboarding')
+export default function OnboardingPage() {
     return (
-        <YStack ai="center" jc="center" theme={theme} fullscreen backgroundColor="$bg">
-            <Text>{t('welcome.greeting', { name: 'Poliane' })}</Text>
+        <YStack fullscreen bg="$bg">
+            <OnboardingHeader />
+            <LanguagePage />
         </YStack>
     )
 }

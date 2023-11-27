@@ -14,6 +14,9 @@ const ButtonFrame = styled(TButton, {
         variant: {
             primary: {
                 backgroundColor: '$primary700',
+                pressStyle: {
+                    backgroundColor: '$primary700',
+                },
             },
             asText: {
                 backgroundColor: '$transparent',

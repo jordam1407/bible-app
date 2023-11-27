@@ -1,15 +1,15 @@
 import i18n from '@src/common/i18n'
 import { ScreenTemplate } from '@src/components/template/ScreenTemplate'
-import useToggleTheme from '@src/hooks/useToggleTheme'
+// import useToggleTheme from '@src/hooks/useToggleTheme'
 import GraphSection from '@src/modules/home/GraphSection/GraphSection'
-import { useToastController } from '@tamagui/toast'
+// import { useToastController } from '@tamagui/toast'
 import { Stack } from 'expo-router'
 import { useTranslation } from 'react-i18next'
 import { Button, Text, YStack } from 'tamagui'
 
 export default function App() {
-    const toast = useToastController()
-    const { toggle, theme } = useToggleTheme()
+    // const toast = useToastController()
+    // const { toggle, theme } = useToggleTheme()
     const { t } = useTranslation('homepage')
     console.log(t('title', { name: 'Poliane' }))
     return (

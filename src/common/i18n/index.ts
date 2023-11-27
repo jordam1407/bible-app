@@ -34,9 +34,4 @@ i18n.use(initReactI18next).init({
     },
 })
 
-i18n.on('languageChanged', (lng) => {
-    numeral.locale(lng)
-    dayjs.locale(lng)
-})
-
 export default i18n

@@ -4,7 +4,7 @@ import { useQuery } from '@tanstack/react-query'
 
 export default function useTracker() {
     const { data, isLoading, refetch } = useQuery({
-        queryKey: ['tracker'],
+        queryKey: ['trackers'],
         queryFn: () => {
             // Merge last365Days and mockArray, ensuring unique days
             const mergedItems = [
