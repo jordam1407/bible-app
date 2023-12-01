@@ -1,31 +1,39 @@
 import { authPath } from '@src/common/config/paths.config'
+import { onboardingStore } from '@src/store/onboarding.atom'
 import { router, useRootNavigation, useSegments } from 'expo-router'
+import { useAtomValue } from 'jotai'
 import { useEffect } from 'react'
 
-const AUTH_GROUP = '(onboarding)'
+import { useAuth } from './useAuth'
+
+const ONBOARADING_GROUP = '(onboarding)'
+const AUTH_GROUP = '(auth)'
 
 export function useProtectedRoute() {
+    const onboarded = useAtomValue(onboardingStore.onboarded)
+    const { isAuthenticated } = useAuth()
+
     const segments = useSegments()
     const rootNavigation = useRootNavigation()
 
-    const isOnboarded = false
+    const isOnboarded = onboarded === 'onboarded'
 
     useEffect(() => {
         if (!rootNavigation?.isReady()) {
             return
         }
 
+        const inOnboardingGroup = segments[0] === ONBOARADING_GROUP
         const inAuthGroup = segments[0] === AUTH_GROUP
-        if (
-            // If the user is not signed in and the initial segment is not anything in the auth group.
-            !isOnboarded &&
-            !inAuthGroup
-        ) {
-            // Redirect to the sign-in page.
+
+        if (!isOnboarded && !inOnboardingGroup) {
             router.replace(authPath.onboarding)
-        } else if (isOnboarded && inAuthGroup) {
-            // Redirect away from the sign-in page.
+        }
+        if (!inAuthGroup && !isAuthenticated && isOnboarded) {
+            router.replace(authPath.signIn)
+        }
+        if (isOnboarded && isAuthenticated && (inOnboardingGroup || inAuthGroup)) {
             router.replace('/')
         }
-    }, [isOnboarded, rootNavigation, segments])
+    }, [isOnboarded, rootNavigation, segments, isAuthenticated])
 }

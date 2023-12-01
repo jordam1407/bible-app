@@ -9,7 +9,7 @@ export const themes = {
         primary: customToken.color.primary700,
         overlay: customToken.color.backdrop,
         border: customToken.color.gray7Light,
-        squareBg: customToken.color.gray7Light,
+        squareBg: customToken.color.gray2Light,
         primaryBorder: 'rgba(197, 11, 52, .3)',
         square10: 'rgba(197, 11, 52, .1)',
         square20: 'rgba(197, 11, 52, .3)',

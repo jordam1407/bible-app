@@ -1,18 +1,22 @@
 {
-    "nameInput": "Enter your name and confirm to proceed:",
-    "welcome": {
-        "greeting": "Hello {{name}}, welcome to the best app for reading the Bible."
+    "screen_1": {
+        "title": "Welcome to [Your App Name]",
+        "description": "Your personalized Bible companion. Explore, engage, and grow in your faith journey."
     },
-    "language": {
-        "title": "Choose your favorite language",
-        "options": {
-            "en": "English",
-            "pt": "Portuguese",
-            "esp": "Spanish"
-        }
+    "screen_2": {
+        "title": "Organize your quality time with God",
+        "description1": "Mark your favorite verses for easy access",
+        "description2": "Leave comments effortlessly on any verse or chapter",
+        "description3": "Visualize your engagement with a fancy daily tracker"
     },
-    "downloadBible": {
-        "description": "Don't worry, you can change it anytime in the settings menu",
-        "title": "Hold on tight, we're downloading your Bible."
+    "screen_3": {
+        "title": "Stay Engaged and Connected",
+        "description1": "Receive daily messages for reflection",
+        "description2": "Access daily verses to enhance your spiritual journey",
+        "description3": "Compete and view your rank among the community's most engaged users"
+    },
+    "auth": {
+        "title": "Join NOME DO APP",
+        "description": "Visualize your daily Bible readings and notes in a fancy modern and intuitive chart"
     }
 }

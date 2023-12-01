@@ -28,7 +28,7 @@ const headingFont = createInterFont()
 const bodyFont = createInterFont()
 const appConfig = createTamagui({
     animations,
-    defaultTheme: 'dark',
+    defaultTheme: 'light',
     shouldAddPrefersColorThemes: false,
     themeClassNameOnRoot: false,
     shorthands,

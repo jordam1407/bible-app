@@ -2,12 +2,14 @@
 import { persister, queryClient } from '@src/common/config/query-client.config'
 import '@src/common/i18n'
 import { ThemeProvider } from '@src/components/ThemeProvider'
+import { useAuth } from '@src/hooks/useAuth'
+import useOnboardManager from '@src/hooks/useOnboardManager'
 import { useOnlineManager } from '@src/hooks/useOnlineManage'
 import { useProtectedRoute } from '@src/hooks/useProtectedRoute'
 import { appStore } from '@src/store/app.atoms'
 // import { focusManager } from '@tanstack/react-query'
 import { PersistQueryClientProvider } from '@tanstack/react-query-persist-client'
-import * as Font from 'expo-font'
+import { useFonts } from 'expo-font'
 import { Slot, SplashScreen } from 'expo-router'
 import { useAtom } from 'jotai'
 import { Suspense, useCallback, useEffect } from 'react'
@@ -32,24 +34,29 @@ export default function App() {
 
 function AppRoot({ children }: { children: React.ReactNode }) {
     const [isAppReady, setAppIsReady] = useAtom(appStore.isAppReady)
+    const { restoreSession, isAuthenticated } = useAuth()
     const { isConnected } = useOnlineManager()
+    const [fontsLoaded] = useFonts({
+        Inter: require('@tamagui/font-inter/otf/Inter-Medium.otf'),
+        InterBold: require('@tamagui/font-inter/otf/Inter-Bold.otf'),
+    })
 
     useEffect(() => {
         async function prepare() {
             try {
-                await Font.loadAsync({
-                    Inter: require('@tamagui/font-inter/otf/Inter-Medium.otf'),
-                    InterBold: require('@tamagui/font-inter/otf/Inter-Bold.otf'),
-                })
+                if (!isAuthenticated) {
+                    await restoreSession()
+                }
             } catch (e) {
                 console.warn(e)
             } finally {
-                setAppIsReady(true)
+                if (fontsLoaded) setAppIsReady(true)
+                // Tell the application to render
             }
         }
 
         prepare()
-    }, [setAppIsReady])
+    }, [setAppIsReady, fontsLoaded, restoreSession, isAuthenticated])
 
     const onLayoutRootView = useCallback(async () => {
         if (isAppReady) {
@@ -91,6 +98,7 @@ function AppRoot({ children }: { children: React.ReactNode }) {
 
 function MainScreen() {
     useProtectedRoute()
+    useOnboardManager()
     return (
         <>
             <Slot />

@@ -84,6 +84,7 @@ function getRandomVerse() {
 // Generate mock data array
 export const mockArray = Array.from({ length: 365 }, (_, id) => {
     const hasRead = Math.random() < 0.5 // 50% chance of having 'read' or not
+    const hasWrite = Math.random() < 0.5 // 50% chance of having 'read' or not
     return {
         id: format(subDays(new Date(), id), 'yyyy-MM-dd'),
         ...(hasRead && {
@@ -91,6 +92,14 @@ export const mockArray = Array.from({ length: 365 }, (_, id) => {
                 name: getRandomBook(),
                 chapter: getRandomChapter(),
                 verse: getRandomVerse(),
+            })),
+        }),
+        ...(hasWrite && {
+            write: Array.from({ length: Math.floor(Math.random() * 5) + 1 }, () => ({
+                name: getRandomBook(),
+                chapter: getRandomChapter(),
+                verse: getRandomVerse(),
+                description: 'lot of description',
             })),
         }),
     }

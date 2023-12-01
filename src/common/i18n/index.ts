@@ -18,6 +18,7 @@ export const resources = {
 } as const
 
 i18n.use(initReactI18next).init({
+    compatibilityJSON: 'v3',
     fallbackLng: 'ptBR',
     lng: 'ptBR',
     resources,

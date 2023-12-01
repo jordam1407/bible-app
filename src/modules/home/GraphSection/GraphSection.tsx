@@ -2,14 +2,16 @@ import { FlashList } from '@shopify/flash-list'
 import useToggleTheme from '@src/hooks/useToggleTheme'
 import useTracker from '@src/hooks/useTracker'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { XStack, Text, Square, YStack } from 'tamagui'
 
 export default function GraphSection() {
     const { theme } = useToggleTheme()
     const { isLoading, tracker, refetch } = useTracker()
+    const { t } = useTranslation('common')
     if (!tracker) return null
     return (
-        <YStack theme={theme} borderColor="$border" padding="$2" borderRadius={8} ai="center" borderWidth={1}>
+        <YStack theme={theme} borderColor="$border" padding="$2" borderRadius={8} ai="center" borderWidth={1} gap="$2">
             <XStack jc="center" gap={4}>
                 <FlashList
                     data={tracker}
@@ -37,8 +39,16 @@ export default function GraphSection() {
                     )}
                 />
             </XStack>
-            <XStack gap={4} ai="center" ml="auto">
-                <Text>Less</Text>
+            <XStack gap={4} ai="center" w="100%">
+                <YStack mr="auto">
+                    <Text fontSize={10} color="$textPrimary70" fontWeight="500">
+                        Mais lido: Gênesis
+                    </Text>
+                    <Text fontSize={10} color="$textPrimary70" fontWeight="500">
+                        Mais notas: Apocalipse
+                    </Text>
+                </YStack>
+                <Text>{t('less')}</Text>
                 {Array.from({ length: 5 }, (_, i) => (
                     <Square
                         key={i}
@@ -51,7 +61,7 @@ export default function GraphSection() {
                         pressStyle={{ bg: '$blue4Dark' }}
                     />
                 ))}
-                <Text>More</Text>
+                <Text>{t('more')}</Text>
             </XStack>
         </YStack>
     )

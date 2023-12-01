@@ -20805,7 +20805,7 @@
       "useAnimations": "Function"
     },
     "media": {},
-    "defaultTheme": "dark",
+    "defaultTheme": "light",
     "shouldAddPrefersColorThemes": false,
     "themeClassNameOnRoot": false,
     "shorthands": {
@@ -20900,7 +20900,7 @@
         "primary": "#c50b34",
         "overlay": "rgba(0,0,0,.5)",
         "border": "hsl(0, 0%, 85.8%)",
-        "squareBg": "hsl(0, 0%, 85.8%)",
+        "squareBg": "hsl(0, 0%, 97.3%)",
         "primaryBorder": "rgba(197, 11, 52, .3)",
         "square10": "rgba(197, 11, 52, .1)",
         "square20": "rgba(197, 11, 52, .3)",

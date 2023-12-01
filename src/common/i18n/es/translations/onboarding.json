@@ -1,18 +1,22 @@
 {
-    "nameInput": "Ingresa tu nombre y confirma para continuar:",
-    "welcome": {
-        "greeting": "¡Hola {{name}}, bienvenido a la mejor aplicación para hábitos de lectura de la Biblia!"
+    "screen_1": {
+        "title": "Bienvenido a [Nombre de tu Aplicación]",
+        "description": "Tu compañero personalizado de la Biblia. Explora, involúcrate y crece en tu viaje de fe."
     },
-    "language": {
-        "title": "Elige tu idioma favorito",
-        "options": {
-            "en": "Inglés",
-            "pt": "Portugués",
-            "esp": "Español"
-        }
+    "screen_2": {
+        "title": "Organiza tu tiempo de calidad con Dios",
+        "description1": "Marca tus versículos favoritos para un acceso fácil",
+        "description2": "Deja comentarios fácilmente en cualquier versículo o capítulo",
+        "description3": "Visualiza tu participación con un rastreador diario llamativo"
     },
-    "downloadBible": {
-        "description": "No te preocupes, puedes cambiarlo en cualquier momento en el menú de configuración",
-        "title": "Espera un momento, estamos descargando tu Biblia."
+    "screen_3": {
+        "title": "Mantente Comprometido y Conectado",
+        "description1": "Recibe mensajes diarios para reflexionar",
+        "description2": "Accede a versículos diarios para mejorar tu viaje espiritual",
+        "description3": "Compite y ve tu posición entre los usuarios más comprometidos de la comunidad"
+    },
+    "auth": {
+        "title": "Únete a NOMBRE DE LA APP",
+        "description": "Visualiza tus lecturas bíblicas diarias y notas en un gráfico moderno e intuitivo"
     }
 }

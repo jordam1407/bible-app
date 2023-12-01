@@ -1,26 +1,22 @@
 {
-    "nameInput": "Digite seu nome e confirme para prosseguir:",
-    "welcome": {
-        "greeting": "Olá {{name}}, seja bem vindo ao melhor app de hábito de leitura bíblica."
+    "screen_1": {
+        "title": "Bem-vindo ao [Nome do Seu Aplicativo]",
+        "description": "Seu companheiro pessoal da Bíblia. Explore, envolva-se e cresça na sua jornada de fé."
     },
-    "language": {
-        "title": "Escolha seu idioma favorito",
-        "options": {
-            "en": "Inglês",
-            "pt": "Portugês",
-            "esp": "Espanhol"
-        }
+    "screen_2": {
+        "title": "Organize seu tempo de qualidade com Deus",
+        "description1": "Marque seus versículos favoritos para acesso fácil",
+        "description2": "Deixe comentários facilmente em qualquer versículo ou capítulo",
+        "description3": "Visualize seu engajamento com um gráfico de hábito diário"
     },
-    "bibleVersion": {
-        "title": "Selecione a versão da bíblia que você deseja utilizar.",
-        "options": {
-            "nvi": "NVI - Nova Versão Internacional",
-            "aa": "AA - Almeida Revista e Atualizada",
-            "acf": "ACF - Almeida Corrigida e Revisada Fiel"
-        }
+    "screen_3": {
+        "title": "Permaneça Engajado e Conectado",
+        "description1": "Receba mensagens diárias para reflexão",
+        "description2": "Acesse versículos diários para enriquecer sua jornada espiritual",
+        "description3": "Participe e veja sua posição entre os usuários mais engajados da comunidade"
     },
-    "downloadBible": {
-        "description": "Não se preocupe, você pode mudá-lo a qualquer momento no menu de configurações",
-        "title": "Aguarde firme, estamos fazendo download da sua bíblia."
+    "auth": {
+        "title": "Junte-se ao NOME DO APP",
+        "description": "Visualize sua leitura bíblica e suas anotações diárias em um gráfico moderno e intuitivo"
     }
 }

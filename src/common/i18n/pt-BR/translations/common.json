@@ -11,5 +11,13 @@
     "optional": "Opcional",
     "admin": "Admin",
     "save": "Salvar",
+    "prev": "Voltar",
+    "next": "Próximo",
+    "confirm": "Confirmar",
+    "name": "Nome",
+    "less": "Menos",
+    "more": "Mais",
+    "signUp": "Começar agora",
+    "signIn": "Ja tenho uma conta",
     "archive": "Arquivar"
 }
